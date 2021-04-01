@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>GIGI</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2021-03-25T12:04:37.557Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Dunant</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>No Limit</title>
+    <link href="http://example.com/2021/03/25/noLimit/"/>
+    <id>http://example.com/2021/03/25/noLimit/</id>
+    <published>2021-03-25T11:02:00.000Z</published>
+    <updated>2021-03-25T12:04:37.557Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;肚腩开车去兜风&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Note" scheme="http://example.com/categories/Note/"/>
+    
+    
+    <category term="diary" scheme="http://example.com/tags/diary/"/>
+    
+  </entry>
+  
+</feed>
