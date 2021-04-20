@@ -57,7 +57,9 @@
     <content><![CDATA[<p>呕心沥血</p>
 <span id="more"></span>
 
-<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1> <img src="https://img.imgdb.cn/item/607f02468322e6675c4e1e17.png" alt="image-20210220223722089" style="zoom: 50%;">
+<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><br>
+
+ <img src="https://img.imgdb.cn/item/607f02468322e6675c4e1e17.png" alt="image-20210220223722089" style="zoom: 50%;">
 
 <p>带宽：发送端在单位时间最高数据率，其中传输速度不变</p>
 <p>时延带宽积：某段链路现在有多少容量</p>
@@ -72,7 +74,10 @@
 <p>层次划分<br>        7层OSI参考模型                    -&gt;                5层体系结构<br>        4层TCP/IP参考模型               -&gt;</p>
  <img src="https://img.imgdb.cn/item/607f000b8322e6675c48c66c.png">
 
-<h1 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h1><img src="https://img.imgdb.cn/item/607f000b8322e6675c48c687.png" alt="image-20210304151243522" style="zoom: 50%;">
+<p><br><br><br></p>
+<h1 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h1><br>
+
+<img src="https://img.imgdb.cn/item/607f000b8322e6675c48c687.png" alt="image-20210304151243522" style="zoom: 50%;">
 
 
 
@@ -114,8 +119,14 @@
 
 
 <p><strong>集线器</strong>：再生，放大信号</p>
-<h1 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h1><p>尚未做好笔记</p>
-<h1 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h1><p>传输单位是 <strong>数据报</strong> ，分组则是将数据块分割成小的数据块然后逐个转发</p>
+<p><br><br><br></p>
+<h1 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h1><br>
+
+<p>尚未做好笔记</p>
+<p><br><br><br></p>
+<h1 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h1><br>
+
+<p>传输单位是 <strong>数据报</strong> ，分组则是将数据块分割成小的数据块然后逐个转发</p>
 <p>功能：路由选择与分组转发<br>            异构网络互联<br>            拥塞控制：使用 开环(静)/闭环(动)控制 来解决</p>
 <h4 id="数据交换方式"><a href="#数据交换方式" class="headerlink" title="数据交换方式"></a>数据交换方式</h4><p>​    <em>电路交换、报文交换、分组交换(数据报方式、虚电路方式)</em></p>
 <p>​    电路交换：建立连接 - 通信 - 释放连接<br>​            优点：通信时延小，有序传输，没有冲突，实时性强<br>​            特点：独占资源<br>​            缺点：建立连接时间长，线路独占效率低，灵活性差，无差错控制能力</p>
@@ -125,7 +136,12 @@
 <p>​    数据报方式 提供无连接服务，虚电路方式 提供连接服务</p>
 <p>​    数据报：无连接、每个分组携带源和目的地址、路由器根据分组的目的地址转发分组（路由器构建，检索转发表）</p>
 <p>​    虚电路：数据报方式和电路交换方式结合，需要建立释放连接，全双工通信<br>​                    每个分组携带虚电路号，路径固定，以d分组方式转发</p>
-<h1 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h1><img src="https://img.imgdb.cn/item/607f021b8322e6675c4db2a6.png">
+<p><br><br><br></p>
+<h1 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h1><br>
+
+
+
+<img src="https://img.imgdb.cn/item/607f021b8322e6675c4db2a6.png">
 <img src="https://img.imgdb.cn/item/607f021b8322e6675c4db2aa.png">
 
 
