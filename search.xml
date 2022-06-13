@@ -14,9 +14,11 @@
 <p>hexo d 部署</p>
 <p>流程：powershell cd拖进文件夹 (先E:进入盘符 再cd操作)</p>
 <p>存放目录：E盘XXXXX下source/post</p>
-<p><br><br><br></p>
+<br>
+
 <hr>
-<p><br><br><br></p>
+<br>
+
 <p><a href="https://hexo.io/">Hexo</a><br><a href="https://hexo.io/docs/">documentation</a></p>
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
 <p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
