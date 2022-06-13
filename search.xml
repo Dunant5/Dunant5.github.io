@@ -7,16 +7,16 @@
 <span id="more"></span>
 
 <hr>
-<h1 id="Mustard-on-the-BEAT"><a href="#Mustard-on-the-BEAT" class="headerlink" title="Mustard on the BEAT!"></a>Mustard on the BEAT!</h1>  <br/>
+<h1 id="Mustard-on-the-BEAT"><a href="#Mustard-on-the-BEAT" class="headerlink" title="Mustard on the BEAT!"></a>Mustard on the BEAT!</h1>  <br>
 
 <p>hexo g 编译</p>
 <p>hexo s 预览</p>
 <p>hexo d 部署</p>
-<p>流程：powershell cd拖进文件夹</p>
+<p>流程：powershell cd拖进文件夹 (先E:进入盘符 再cd操作)</p>
 <p>存放目录：E盘XXXXX下source/post</p>
-<p><br/><br/><br/></p>
+<p><br><br><br></p>
 <hr>
-<p><br/><br/><br/></p>
+<p><br><br><br></p>
 <p><a href="https://hexo.io/">Hexo</a><br><a href="https://hexo.io/docs/">documentation</a></p>
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
 <p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
@@ -54,7 +54,7 @@
   <entry>
     <title>计网笔记</title>
     <url>/2021/04/20/%E8%AE%A1%E7%BD%91/</url>
-    <content><![CDATA[<p>呕心沥血</p>
+    <content><![CDATA[<p>考研复习笔记</p>
 <span id="more"></span>
 
 <p><br><br><br></p>
