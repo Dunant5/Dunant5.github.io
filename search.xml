@@ -184,4 +184,52 @@
 <p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20220923110241030.png" alt="image-20220923110241030"></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>计算机组成原理笔记</title>
+    <url>/2022/10/21/%E8%AE%A1%E7%BB%84/</url>
+    <content><![CDATA[<p>考研复习笔记</p>
+<span id="more"></span>
+
+<hr>
+<h1 id="第五章-中央处理器CPU"><a href="#第五章-中央处理器CPU" class="headerlink" title="第五章 中央处理器CPU"></a>第五章 中央处理器CPU</h1><br>
+
+<h2 id="一-CPU的功能结构"><a href="#一-CPU的功能结构" class="headerlink" title="一 CPU的功能结构"></a>一 CPU的功能结构</h2><p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20220905134056369.png" alt="image-20220905134056369"></p>
+<p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20220905134207957.png" alt="image-20220905134207957"></p>
+<h3 id="运算器"><a href="#运算器" class="headerlink" title="运算器"></a>运算器</h3><p>1.专用数据通路方式</p>
+<p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20220905133840562.png" alt="image-20220905133840562"></p>
+<p>2.CPU内部单总线方式</p>
+<p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20220905133941624.png" alt="image-20220905133941624"></p>
+<h3 id="控制器"><a href="#控制器" class="headerlink" title="控制器"></a>控制器</h3><p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20220905133218790.png" alt="image-20220905133218790"></p>
+<h2 id="二-指令执行过程"><a href="#二-指令执行过程" class="headerlink" title="二 指令执行过程"></a>二 指令执行过程</h2><p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20220908144151070.png" alt="image-20220908144151070"></p>
+<h4 id="取址周期"><a href="#取址周期" class="headerlink" title="取址周期"></a>取址周期</h4><p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20220908144554283.png" alt="image-20220908144554283"></p>
+<h4 id="间址周期"><a href="#间址周期" class="headerlink" title="间址周期"></a>间址周期</h4><p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20220908144810468.png" alt="image-20220908144810468"></p>
+<h4 id="执行周期"><a href="#执行周期" class="headerlink" title="执行周期"></a>执行周期</h4><p>没有统一的数据流向</p>
+<h4 id="中断周期"><a href="#中断周期" class="headerlink" title="中断周期"></a>中断周期</h4><p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20220908161134981.png" alt="image-20220908161134981"></p>
+<p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20220908160849510.png" alt="image-20220908160849510"></p>
+<h4 id="CPU内部单总线方式-例题"><a href="#CPU内部单总线方式-例题" class="headerlink" title="CPU内部单总线方式 例题"></a>CPU内部单总线方式 例题</h4><p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20220908160923526.png" alt="image-20220908160923526"></p>
+<p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20220908161005538.png" alt="image-20220908161005538"></p>
+<h4 id="专用数据通路方式-例题"><a href="#专用数据通路方式-例题" class="headerlink" title="专用数据通路方式 例题"></a>专用数据通路方式 例题</h4><p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20220908161713600.png" alt="image-20220908161713600"></p>
+<p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20220908161830154.png" alt="image-20220908161830154"></p>
+<p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20220908164141060.png" alt="image-20220908164141060"></p>
+<p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20220908164321517.png" alt="image-20220908164321517"></p>
+<p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20220908164440505.png" alt="image-20220908164440505"></p>
+<p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20220908164525236.png" alt="image-20220908164525236"></p>
+<h2 id="三-控制器"><a href="#三-控制器" class="headerlink" title="三 控制器"></a>三 控制器</h2><p>控制器的设计：1. 硬布线    2. 微程序</p>
+<p>根据指令操作码、目前的机器周期（定长）、节拍信号、机器状态条件，即可确定现在这个节拍下应该发出哪些“微命令”</p>
+<h4 id="安排微操作时序"><a href="#安排微操作时序" class="headerlink" title="安排微操作时序"></a>安排微操作时序</h4><p>原则一</p>
+<p>微操作的先后顺序不得随意更改</p>
+<p>原则二</p>
+<p>被控对象不同的微操作，尽量安排在一个节拍内完成</p>
+<p>原则三</p>
+<p>占用时间较短的微操作，尽量安排在一个节拍内完成，并允许有先后顺序。（比如微操作顺序a-&gt;b，但都能在CPU内完成，则可以放在一个节拍完成）</p>
+<h4 id="微程序"><a href="#微程序" class="headerlink" title="微程序"></a>微程序</h4><p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20220908193938409.png" alt="image-20220908193938409"></p>
+<h2 id="四-机器流水线"><a href="#四-机器流水线" class="headerlink" title="四 机器流水线"></a>四 机器流水线</h2><p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20220910093743457.png" alt="image-20220910093743457"></p>
+]]></content>
+      <categories>
+        <category>Note</category>
+      </categories>
+      <tags>
+        <tag>study</tag>
+      </tags>
+  </entry>
 </search>
