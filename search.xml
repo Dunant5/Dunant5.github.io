@@ -166,6 +166,79 @@
 
 <h1 id="强化"><a href="#强化" class="headerlink" title="强化"></a>强化</h1><p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20221017090627018.png" alt="image-20221017090627018"></p>
 <p><img src="https://sitedunant.oss-cn-guangzhou.aliyuncs.com/image-20221019212919334.png" alt="image-20221019212919334"></p>
+<br>
+
+<h1 id="协议总结"><a href="#协议总结" class="headerlink" title="协议总结"></a>协议总结</h1><br>
+
+<h2 id="数据链路层协议"><a href="#数据链路层协议" class="headerlink" title="数据链路层协议"></a>数据链路层协议</h2><h3 id="随机访问介质控制"><a href="#随机访问介质控制" class="headerlink" title="随机访问介质控制"></a>随机访问介质控制</h3><h4 id="CSMA-载波侦听多路访问协议"><a href="#CSMA-载波侦听多路访问协议" class="headerlink" title="CSMA 载波侦听多路访问协议"></a>CSMA 载波侦听多路访问协议</h4><ol>
+<li>1-坚持CSMA 冲突则随机一段时间再重新侦听</li>
+<li>非坚持CSMA 信道忙则一段时间再检测是否忙</li>
+<li>p-坚持CSMA 信道空闲则以概率p发送数据</li>
+</ol>
+<h4 id="CSMA-CD-载波侦听多路访问-碰撞检测协议"><a href="#CSMA-CD-载波侦听多路访问-碰撞检测协议" class="headerlink" title="CSMA/CD 载波侦听多路访问/碰撞检测协议"></a>CSMA/CD 载波侦听多路访问/碰撞检测协议</h4><p>适用于总线形或半双工网络</p>
+<p>先听后发、边听边发、冲突停发、随机重发(无法避免冲突)</p>
+<p>二进制指数退避算法：重传16次仍不成功，抛弃帧并向高层报告出错</p>
+<h4 id="CSMA-CA"><a href="#CSMA-CA" class="headerlink" title="CSMA/CA"></a>CSMA/CA</h4><p>适用于无线局域网</p>
+<p>碰撞避免</p>
+<p>处理隐蔽站问题：源站先广播RTS请求发送控制帧，目的站检测空闲则广播<em>CTS允许发送控制帧</em>-&gt;1.许可源站 2.他站闭嘴</p>
+<h4 id="令牌传递协议"><a href="#令牌传递协议" class="headerlink" title="令牌传递协议"></a>令牌传递协议</h4><p>令牌型局域网(环)，令牌：特殊的MAC控制帧</p>
+<p>站点发完一帧要释放令牌，无法连续发送</p>
+<p>不会发生冲突，适合负载高的广播信道</p>
+<h4 id="VLAN"><a href="#VLAN" class="headerlink" title="VLAN"></a>VLAN</h4><p>相当于划分子网，划分局域网成虚拟局域网，划分广播域（相同才能转发）</p>
+<h4 id="PPP协议"><a href="#PPP协议" class="headerlink" title="PPP协议"></a>PPP协议</h4><p>链路层，不可靠</p>
+<p>点对点连接发送数据</p>
+<p>异步线路：字节填充法    同步线路：比特填充</p>
+<h2 id="网络层协议"><a href="#网络层协议" class="headerlink" title="网络层协议"></a>网络层协议</h2><h4 id="ARP-地址解析协议"><a href="#ARP-地址解析协议" class="headerlink" title="ARP 地址解析协议"></a>ARP 地址解析协议</h4><p>用 <strong>IP地址</strong> 找 <strong>MAC地址</strong></p>
+<p>请求分组广播发送，响应分组单播</p>
+<p>自动进行，主机用户不知道</p>
+<p>RARP：MAC地址 到 IP地址</p>
+<h4 id="DHCP-动态主机配置协议"><a href="#DHCP-动态主机配置协议" class="headerlink" title="DHCP 动态主机配置协议"></a>DHCP 动态主机配置协议</h4><p>给主机动态地分配IP地址</p>
+<p>即插即用</p>
+<p>应用层协议，基于UDP，C/S方式，广播发送报文</p>
+<h4 id="ICMP-网际控制报文协议"><a href="#ICMP-网际控制报文协议" class="headerlink" title="ICMP 网际控制报文协议"></a>ICMP 网际控制报文协议</h4><p><strong>差错报告报文</strong>：终点不可达、源点抑制(拥塞)、时间超过(TTL=0)、参数问题、改变路由(可通过更好路由)</p>
+<p><strong>询问报文</strong>：PING(应用层)、Traceroute(网络层)</p>
+<h3 id="网络层路由协议"><a href="#网络层路由协议" class="headerlink" title="网络层路由协议"></a>网络层路由协议</h3><p>分两类</p>
+<ol>
+<li><p>内部网关协议IGP</p>
+</li>
+<li><p>外部网关协议EGP（各自治系统AS间）</p>
+</li>
+</ol>
+<h4 id="RIP-路由信息协议"><a href="#RIP-路由信息协议" class="headerlink" title="RIP 路由信息协议"></a>RIP 路由信息协议</h4><p>基于路由向量，交换自己路由表信息</p>
+<p>好消息传的快（收敛快），坏消息传得慢（慢收敛）</p>
+<p>是<em>应用层协议</em>，用UDP(port 520)传送数据</p>
+<p>隔段时间更新</p>
+<h4 id="OSPF-开放最短路径优先协议"><a href="#OSPF-开放最短路径优先协议" class="headerlink" title="OSPF 开放最短路径优先协议"></a>OSPF 开放最短路径优先协议</h4><p><strong>洪泛法</strong> 向AS内所有路由器发相邻路由器的代价</p>
+<p><em>网络层协议</em>，直接用IP数据报传送</p>
+<p>在比AS更小范围的<strong>区域</strong>内，用Dijkastra计算最短路径</p>
+<p>变化时才更新</p>
+<p>​        分组类型：问候、数据库描述、链路状态请求、链路状态更新、链路状态确认</p>
+<h4 id="BGP-边界网关协议"><a href="#BGP-边界网关协议" class="headerlink" title="BGP 边界网关协议"></a>BGP 边界网关协议</h4><p>AS之间交换路由信息（路径向量）的协议</p>
+<p><em>应用层协议</em>，基于TCP(因为网络复杂要可靠)</p>
+<p>​        BGP-4报文类型：打开（建立关系）、更新、保活（确认存活）、通知（检测到的差错）</p>
+<br>
+
+<h3 id="组播协议"><a href="#组播协议" class="headerlink" title="组播协议"></a>组播协议</h3><h4 id="IGMP-因特网组管理协议"><a href="#IGMP-因特网组管理协议" class="headerlink" title="IGMP 因特网组管理协议"></a>IGMP 因特网组管理协议</h4><p>让连接到本地局域网上的组播路由器知道本局域网上是否有主机参加或退出了某个组播组</p>
+<p>组播路由选择：组播转发树，每个分组在每条链路上只传送一次</p>
+<h3 id="移动IP"><a href="#移动IP" class="headerlink" title="移动IP"></a>移动IP</h3><p>三种功能实体：移动结点(有永久IP地址)、<strong>归属(本地)代理、外部代理</strong>    -&gt; (黑体字统称移动代理)</p>
+<p>其中，归属(本地)代理：用隧道技术转交结点数据包</p>
+<p>本地地址不变，用转交地址标识移动结点现在所处位置</p>
+<p>移动结点在本地网时，仍用TCP/IP方式通信</p>
+<br>
+
+<h2 id="应用层协议"><a href="#应用层协议" class="headerlink" title="应用层协议"></a>应用层协议</h2><h4 id="FTP-文件传输协议"><a href="#FTP-文件传输协议" class="headerlink" title="FTP 文件传输协议"></a>FTP 文件传输协议</h4><p>可用于不同种类主机系统</p>
+<p>以匿名FTP，实现文件共享</p>
+<p>C/S方式，TCP可靠</p>
+<p>port 21(控制连接 -&gt; 会话期间一直打开)    </p>
+<p>port 20(数据连接)    主动模式PORT：服务器连接到客户端    被动模式PASV：客户端连接到服务器</p>
+<p>带外传送(Out-of-band)：修改服务器上文件要先全部下载到本地</p>
+<h4 id="SMTP-简单邮件传输协议"><a href="#SMTP-简单邮件传输协议" class="headerlink" title="SMTP 简单邮件传输协议"></a>SMTP 简单邮件传输协议</h4><p>“PUSH 推”</p>
+<p>TCP连接 port 25</p>
+<p>阶段：连接建立、邮件传送、连接释放</p>
+<h4 id="POP3-邮局协议-amp-IMAP"><a href="#POP3-邮局协议-amp-IMAP" class="headerlink" title="POP3 邮局协议 &amp; IMAP"></a>POP3 邮局协议 &amp; IMAP</h4><p>POP3：”PULL 拉”</p>
+<p>C/S方式 传输层的TCP port 110</p>
+<p>IMAP：允许用户代理只获取报文某部分</p>
+<p><br><br></p>
 <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/playlist/a-list-%E7%B2%A4%E8%AF%AD%E6%B5%81%E8%A1%8C/pl.31991c6bcf0447ac9f16c07678a5a0a0"></iframe>
 ]]></content>
       <categories>
