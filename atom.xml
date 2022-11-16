@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-23T11:31:56.587Z</updated>
+  <updated>2022-11-16T12:35:30.191Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2022/10/21/%E8%AE%A1%E7%BB%84/"/>
     <id>http://example.com/2022/10/21/%E8%AE%A1%E7%BB%84/</id>
     <published>2022-10-21T11:27:00.000Z</published>
-    <updated>2022-10-23T11:31:56.587Z</updated>
+    <updated>2022-11-16T12:35:30.191Z</updated>
     
     
     <summary type="html">&lt;p&gt;考研复习笔记&lt;/p&gt;</summary>
@@ -59,7 +59,7 @@
     <link href="http://example.com/2022/06/13/%E8%AE%A1%E7%BD%91/"/>
     <id>http://example.com/2022/06/13/%E8%AE%A1%E7%BD%91/</id>
     <published>2022-06-13T08:20:00.000Z</published>
-    <updated>2022-11-15T13:24:02.141Z</updated>
+    <updated>2022-11-16T12:50:30.164Z</updated>
     
     
     <summary type="html">&lt;p&gt;考研复习笔记&lt;/p&gt;</summary>
